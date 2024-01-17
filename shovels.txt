@@ -1,0 +1,58 @@
+Elizabeth: Just out of curiosity, how are my orders doing?
+Mary: I finished the shovels. They're still in the shop because I didn't expect to see you today.
+Elizabeth: What about the plow?
+Player chooses "They're not done, sorry"
+    Mary: I haven't started.
+    Elizabeth: What?
+    Mary: I'll give you 50% off if they're a week late. 2 weeks late and they're free. Sorry.
+    Elizabeth: No, that's not what I meant. It's summer. It's not that urgent.
+    Mary: So I can get a few other orders done before yours?
+    Elizabeth: That's fine.
+Player chooses "What plow?"
+    Mary: You ordered a plow?
+    Elizabeth: It was on the paper I handed you over a week ago. I double checked it.
+    Mary: You know why blacksmiths never remember anything?
+    
+    
+    Mary: You can't spell "forget" without the forge.
+    Elizabeth: Please stop
+Elizabeth: You've been getting a lot of orders recently?
+Mary: Honestly, not really
+Elizabeth: You usually get stuff done faster than this.
+Mary: Yeah I know.
+Elizabeth: ...is everything okay at work?
+Mary: I guess my right shoulder hurts even more than usual, and I've been staying up late reading books that aren't even good.
+Elizabeth: You ever think about not taking new orders for a bit and just finish the stuff that's already ordered?
+Mary: Nah
+Elizabeth: Is it okay if I ask why? You need money for something?
+Mary: No...maybe I'm worried I'll need the money for something unexpected in the future.
+Elizabeth: If you weren't worried at all about money, would you still take so many orders?
+Mary: Probably not, but I think I'd still take most of them. Sometimes it just feels like I should be working.
+Elizabeth: If you weren't worried at all about money, would you still do blacksmithing at all?
+
+
+Mary: You ever feel like people make totally arbitrary decisions and then spend multiple years trying to justify them?
+Elizabeth: You mean about jobs?
+Mary: Yeah
+Elizabeth: I get that. I could go on all day about how I like working outside or being the backbone of my community or whatever, but I sometimes still think I became a farmer just because a bunch of my friends did it.
+Mary: I honestly probably wouldn't be here if Edward didn't live right next to me for so many years. When he wanted something he just made it for himself. When I wanted something he sometimes made it for me. I looked up to him so much when I was a kid.
+Player chooses "But I also thought blacksmithing was cool."
+    Mary: At some point I also noticed that carpenters can cut wood into whatever they want, but their saw was made by a blacksmith. Tailors can cut cloth into whatever they want, but their scissors were made by a blacksmith. Almost everyone asks blacksmiths to make tools, but blacksmiths make their own tools. Does this make blacksmiths more powerful craftsmen? That's kind of how I interpreted it.
+    Elizabeth: You know what? If you can't get my plow done, I'll just make it myself using the husks left over from last year.
+    Mary: Okay have fun
+Player chooses "But I also thought I'd be able to help my neighbors."
+    Mary: Edward also often complained about how he got so many orders that he sometimes had to refuse half of them. I didn't know anyone else who was that busy, so I thought those customers could use another blacksmith.
+    Elizabeth: Are any of the local blacksmiths less busy now that there are more of them?
+    Mary: I don't think so.
+    Elizabeth: Any idea why?
+    Mary: No
+Player chooses "But I also genuinely enjoy blacksmithing."
+    Mary: But I also genuinely enjoy the process of thinking of something in my head and watching it becomme a little bit more real every time I swing my hammer. 
+    Elizabeth: Does your right shoulder enjoy it too?
+    Mary: Elizabeth. Why are you like this?
+    Elizabeth: I genuinely enjoy the process of watching my friendships fall apart a little bit every time I make fun of their jobs.
+
+
+Mary: There's something else I've been thinking about for a while, since before I became a blacksmith.
+Elizabeth: What is it? 
+Mary: I sometimes feel like we work every day just to put food on the table. And once we finally have more than enough to get through the winter, we catch some random disease and die. I really hope this doesn't make me sound arrogant, but I didn't want a job that would just perpetuate this cycle. I wanted to change how things work, change how people live, even if it's just a little better than before. I wanted to leave something behind when I die.
