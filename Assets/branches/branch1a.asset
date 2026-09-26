@@ -10,12 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a91bdc73f3769843911174d66677929, type: 3}
-  m_Name: branch0
+  m_Name: branch1a
   m_EditorClassIdentifier: Assembly-CSharp::BranchSO
-  pages:
-  - {fileID: 1777716286148303965, guid: 4b3a3c49d750d70489d565bdd35755ed, type: 3}
-  - {fileID: 1777716286148303965, guid: 4b3a3c49d750d70489d565bdd35755ed, type: 3}
-  branches:
-  - {fileID: 11400000, guid: 0da431776812d1b40991a41e6f6a8c44, type: 2}
-  - {fileID: 11400000, guid: 2d0a128c3d57319459b1c6de05b3d7a1, type: 2}
-  buttonText: ukhgjyhtfr
+  pages: []
+  branches: []
+  buttonText: Again?
