@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a91bdc73f3769843911174d66677929, type: 3}
   m_Name: branch1a
   m_EditorClassIdentifier: Assembly-CSharp::BranchSO
-  pages: []
-  branches: []
+  pages:
+  - {fileID: -3814630351900214260, guid: e09e5483f30d4c0479b1b83830b6dbee, type: 3}
+  branches:
+  - {fileID: 11400000, guid: 91b796909a9f341489a98e5d91a5194d, type: 2}
   buttonText: Again?

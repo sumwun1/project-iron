@@ -23,8 +23,9 @@ public class Manager : MonoBehaviour
     void Start()
     {
         pageNumber = 0;
-		//layerNumber = 0;
-		instance = this;
+		buttons = new GameObject[0];
+        //layerNumber = 0;
+        instance = this;
     }
 
     // Update is called once per frame
@@ -44,7 +45,7 @@ public class Manager : MonoBehaviour
 	public void StartGame()
 	{
 		titleScreen.SetActive(false);
-        firstPanel.sprite = branch.GetPage(pageNumber);
+		ChooseBranch(branch);
     }
 
     public void NextPage()
@@ -55,6 +56,11 @@ public class Manager : MonoBehaviour
 		}*/
         if (branch.GetLength() <= pageNumber + 1)
         {
+			if(1 == branch.GetBranchCount())
+			{
+				ChooseBranch(branch.GetBranch(0));
+			}
+
 			return;
         }
 
@@ -82,13 +88,13 @@ public class Manager : MonoBehaviour
 
     public void ChooseBranch(BranchSO inBranch)
 	{
-		branch = inBranch;
-		pageNumber = 0;
-        firstPanel.sprite = branch.GetPage(pageNumber);
-
 		for(int a = 0; buttons.Length > a; a++)
 		{
 			Destroy(buttons[a]);
 		}
+
+        branch = inBranch;
+        pageNumber = 0;
+        firstPanel.sprite = branch.GetPage(pageNumber);
     }
 }
