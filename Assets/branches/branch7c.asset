@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a91bdc73f3769843911174d66677929, type: 3}
+  m_Name: branch7c
+  m_EditorClassIdentifier: Assembly-CSharp::BranchSO
+  pages:
+  - {fileID: 8279818991081799670, guid: 268b967952e87e849880ecfc42736f3e, type: 3}
+  branches:
+  - {fileID: 11400000, guid: a997c6f634758784887fa03c6b560cd1, type: 2}
+  buttonText: Tell her you quit blacksmithing
+  type: 0
+  aPoints: 0
+  bPoints: 0
+  cPoints: 1

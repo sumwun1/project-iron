@@ -12,18 +12,20 @@ public class Manager : MonoBehaviour
 	//public Image[] layers;
 	public Image firstPanel;
 	GameObject[] buttons;
+	int[] points;
 	int pageNumber;
 	//int layerNumber;
 	//int mode;
-	int aPoints;
-	int bPoints;
-	int cPoints;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         pageNumber = 0;
 		buttons = new GameObject[0];
+		points = new int[3];
+		points[0] = 0;
+        points[1] = 0;
+        points[2] = 0;
         //layerNumber = 0;
         instance = this;
     }
@@ -56,9 +58,24 @@ public class Manager : MonoBehaviour
 		}*/
         if (branch.GetLength() <= pageNumber + 1)
         {
-			if(1 == branch.GetBranchCount())
+			if(0 == branch.type)
 			{
 				ChooseBranch(branch.GetBranch(0));
+			}
+
+			if(2 == branch.type)
+			{
+				int index = 0;
+
+				for(int a = 1; a < 3; a++)
+				{
+					if (points[a] < points[index])
+					{
+						index = a;
+					}
+				}
+
+				ChooseBranch(branch.GetBranch(index));
 			}
 
 			return;
@@ -67,7 +84,7 @@ public class Manager : MonoBehaviour
         pageNumber++;
         firstPanel.sprite = branch.GetPage(pageNumber);
 
-		if(branch.GetLength() <= pageNumber + 1)
+		if(branch.GetLength() <= pageNumber + 1 && (1 == branch.type))
 		{
 			buttons = new GameObject[branch.GetBranchCount()];
 
@@ -86,15 +103,18 @@ public class Manager : MonoBehaviour
 		}
     }
 
-    public void ChooseBranch(BranchSO inBranch)
+    public void ChooseBranch(BranchSO nextBranch)
 	{
 		for(int a = 0; buttons.Length > a; a++)
 		{
 			Destroy(buttons[a]);
 		}
 
-        branch = inBranch;
+        branch = nextBranch;
         pageNumber = 0;
         firstPanel.sprite = branch.GetPage(pageNumber);
+		points[0] += branch.aPoints;
+		points[1] += branch.bPoints;
+		points[2] += branch.cPoints;
     }
 }

@@ -19,3 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0da431776812d1b40991a41e6f6a8c44, type: 2}
   - {fileID: 11400000, guid: 2d0a128c3d57319459b1c6de05b3d7a1, type: 2}
   buttonText: ukhgjyhtfr
+  type: 1
+  aPoints: 0
+  bPoints: 0
+  cPoints: 0

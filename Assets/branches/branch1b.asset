@@ -17,3 +17,7 @@ MonoBehaviour:
   branches:
   - {fileID: 11400000, guid: 91b796909a9f341489a98e5d91a5194d, type: 2}
   buttonText: I needed that sleep.
+  type: 0
+  aPoints: 1
+  bPoints: 0
+  cPoints: 1

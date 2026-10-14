@@ -6,6 +6,13 @@ public class BranchSO : ScriptableObject
     public Sprite[] pages;
     public BranchSO[] branches;
     public string buttonText;
+    //0: one next branch
+    //1: buttons
+    //2: least points
+    public int type;
+    public int aPoints;
+    public int bPoints;
+    public int cPoints;
 
     public int GetLength()
     {
