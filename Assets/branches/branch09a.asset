@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a91bdc73f3769843911174d66677929, type: 3}
-  m_Name: branch1b
+  m_Name: branch09a
   m_EditorClassIdentifier: Assembly-CSharp::BranchSO
   pages:
-  - {fileID: 4634876968310486812, guid: b80e306dafca8684ca35ceafc00ab598, type: 3}
+  - {fileID: -6020609262302394155, guid: f94324388071f8a45a353d5652e3350c, type: 3}
   branches:
-  - {fileID: 11400000, guid: 91b796909a9f341489a98e5d91a5194d, type: 2}
-  buttonText: I needed that sleep.
+  - {fileID: 11400000, guid: df9a5ff2c3e7a2d49b9ce337c1679100, type: 2}
+  buttonText: Wait a little longer
   type: 0
-  aPoints: 1
+  aPoints: 0
   bPoints: 0
-  cPoints: 1
+  cPoints: 0

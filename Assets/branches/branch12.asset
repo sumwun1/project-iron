@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a91bdc73f3769843911174d66677929, type: 3}
-  m_Name: branch1a
+  m_Name: branch12
   m_EditorClassIdentifier: Assembly-CSharp::BranchSO
   pages:
-  - {fileID: -3814630351900214260, guid: e09e5483f30d4c0479b1b83830b6dbee, type: 3}
+  - {fileID: -1785679438346955708, guid: 0b8ec2509dc010242b99cd2992ba0655, type: 3}
+  - {fileID: -1785679438346955708, guid: 0b8ec2509dc010242b99cd2992ba0655, type: 3}
   branches:
-  - {fileID: 11400000, guid: 91b796909a9f341489a98e5d91a5194d, type: 2}
-  buttonText: Again?
-  type: 0
+  - {fileID: 0}
+  - {fileID: 0}
+  buttonText: 
+  type: 1
   aPoints: 0
-  bPoints: 2
+  bPoints: 0
   cPoints: 0

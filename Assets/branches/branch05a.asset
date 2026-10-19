@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a91bdc73f3769843911174d66677929, type: 3}
-  m_Name: branch7c
+  m_Name: branch05a
   m_EditorClassIdentifier: Assembly-CSharp::BranchSO
   pages:
-  - {fileID: 8279818991081799670, guid: 268b967952e87e849880ecfc42736f3e, type: 3}
+  - {fileID: 434684973344202006, guid: 0af7fde8e7f55de4181daaf15722a3cb, type: 3}
   branches:
-  - {fileID: 11400000, guid: a997c6f634758784887fa03c6b560cd1, type: 2}
-  buttonText: Tell her you quit blacksmithing
+  - {fileID: 11400000, guid: d6dd81d0e58dc1d43a96dc40c090ce8d, type: 2}
+  buttonText: 
   type: 0
   aPoints: 0
   bPoints: 0
-  cPoints: 1
+  cPoints: 0

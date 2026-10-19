@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a91bdc73f3769843911174d66677929, type: 3}
-  m_Name: branch7b
+  m_Name: branch09b
   m_EditorClassIdentifier: Assembly-CSharp::BranchSO
   pages:
-  - {fileID: 2984988272099590602, guid: d0e44159c090fef4aa36146a72414647, type: 3}
+  - {fileID: 6275599847401024167, guid: 58f1074e844b2f148a885997b3932323, type: 3}
   branches:
-  - {fileID: 11400000, guid: a997c6f634758784887fa03c6b560cd1, type: 2}
-  buttonText: Tell her you left the company
+  - {fileID: 11400000, guid: df9a5ff2c3e7a2d49b9ce337c1679100, type: 2}
+  buttonText: Walk to the city
   type: 0
   aPoints: 1
   bPoints: 0
