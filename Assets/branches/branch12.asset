@@ -16,8 +16,8 @@ MonoBehaviour:
   - {fileID: -1785679438346955708, guid: 0b8ec2509dc010242b99cd2992ba0655, type: 3}
   - {fileID: -1785679438346955708, guid: 0b8ec2509dc010242b99cd2992ba0655, type: 3}
   branches:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: fa5455b3be8c58b4aa286201fe5929bc, type: 2}
+  - {fileID: 11400000, guid: 817479fc23256e247bb83643497a21fd, type: 2}
   buttonText: 
   type: 1
   aPoints: 0
