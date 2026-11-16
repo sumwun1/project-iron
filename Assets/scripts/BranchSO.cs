@@ -13,6 +13,10 @@ public class BranchSO : ScriptableObject
     public int aPoints;
     public int bPoints;
     public int cPoints;
+    public int buttonType;
+    //0: row on bottom
+    //1: column on bottom right
+    //2: sprites
 
     public int GetLength()
     {

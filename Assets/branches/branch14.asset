@@ -17,10 +17,11 @@ MonoBehaviour:
   - {fileID: 1714748732833485167, guid: 0107d7437dfb9c549b45aa8ab4f48723, type: 3}
   - {fileID: 1299920212517421895, guid: e894c1f2f7f521646a45e78fdb2c478b, type: 3}
   branches:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 43b3d0e8857380e4797f442e47f0cc76, type: 2}
+  - {fileID: 11400000, guid: 9ccbb160e3eb95f4d8960f4ba78f1946, type: 2}
   buttonText: 
   type: 1
   aPoints: 0
   bPoints: 0
   cPoints: 0
+  buttonType: 1

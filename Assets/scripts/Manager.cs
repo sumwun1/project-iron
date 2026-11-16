@@ -94,9 +94,19 @@ public class Manager : MonoBehaviour
 				button.SetParent(canvas);
 				button.GetChild(0).GetComponent<TMP_Text>().text = branch.GetBranch(a).buttonText;
 				RectTransform buttonRect = button.GetComponent<RectTransform>();
-				buttonRect.anchorMin = new Vector2(1f / 6f + (a * 2f + 1f) / (branch.GetBranchCount() * 3f), 0.25f);
-                buttonRect.anchorMax = new Vector2(1f / 6f + (a * 2f + 1f) / (branch.GetBranchCount() * 3f), 0.25f);
-                buttonRect.anchoredPosition = Vector2.zero;
+
+				if (0 == branch.buttonType)
+				{
+					buttonRect.anchorMin = new Vector2(1f / 6f + (a * 2f + 1f) / (branch.GetBranchCount() * 3f), 0.25f);
+					buttonRect.anchorMax = new Vector2(1f / 6f + (a * 2f + 1f) / (branch.GetBranchCount() * 3f), 0.25f);
+				}
+				else if(1 == branch.buttonType)
+				{
+                    buttonRect.anchorMin = new Vector2(2f / 3f, (a + 1f) / (branch.GetBranchCount() * 2f + 2f));
+                    buttonRect.anchorMax = new Vector2(2f / 3f, (a + 1f) / (branch.GetBranchCount() * 2f + 2f));
+                }
+
+				buttonRect.anchoredPosition = Vector2.zero;
 				button.GetComponent<BranchButton>().SetBranch(branch.GetBranch(a));
 				buttons[a] = button.gameObject;
             }
