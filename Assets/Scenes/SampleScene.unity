@@ -1418,7 +1418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8f63ad858d20549b5a3444c50c3045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  buttonPrefab: {fileID: 3742588859900087821, guid: 738144efe91078943b2c2868f826816f, type: 3}
+  textButtonPrefab: {fileID: 3742588859900087821, guid: 738144efe91078943b2c2868f826816f, type: 3}
+  imageButtonPrefab: {fileID: 3742588859900087821, guid: b5696a19fa06d16418a3f9bd808fb052, type: 3}
   titleScreen: {fileID: 1691005858}
   canvas: {fileID: 1258766072}
   branch: {fileID: 11400000, guid: 455fc522701f18a499f696489ac89673, type: 2}

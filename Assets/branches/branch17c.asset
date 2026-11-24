@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a91bdc73f3769843911174d66677929, type: 3}
+  m_Name: branch17c
+  m_EditorClassIdentifier: Assembly-CSharp::BranchSO
+  pages:
+  - {fileID: -535959683538269898, guid: 0be0e2d6bd747944ebe678deec5eef5e, type: 3}
+  branches: []
+  buttonSprite: {fileID: -8117919920640309784, guid: b2fefd6e3b03a8142a4bedb9a23a47ef, type: 3}
+  buttonText: 
+  type: 0
+  aPoints: 1
+  bPoints: 0
+  cPoints: 0
+  buttonType: 0

@@ -14,9 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BranchSO
   pages:
   - {fileID: -5063604471804640595, guid: b9e6ab79d91722b439a00881d809e40a, type: 3}
-  branches: []
+  branches:
+  - {fileID: 11400000, guid: 70ec3064c343e52438cf153986727d73, type: 2}
+  - {fileID: 11400000, guid: 039ed44a06e2d1e4ca9d31cd91265db3, type: 2}
+  - {fileID: 11400000, guid: abc347fdb035b824aa3903a0c7a2c04d, type: 2}
+  buttonSprite: {fileID: 0}
   buttonText: 
-  type: 0
+  type: 1
   aPoints: 0
   bPoints: 0
   cPoints: 0

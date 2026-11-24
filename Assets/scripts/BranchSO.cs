@@ -5,11 +5,12 @@ public class BranchSO : ScriptableObject
 {
     public Sprite[] pages;
     public BranchSO[] branches;
+    public Sprite buttonSprite;
     public string buttonText;
+    public int type;
     //0: one next branch
     //1: buttons
     //2: least points
-    public int type;
     public int aPoints;
     public int bPoints;
     public int cPoints;
