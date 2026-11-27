@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections.Generic;
 
 public class Manager : MonoBehaviour
 {
@@ -8,11 +9,14 @@ public class Manager : MonoBehaviour
 	public GameObject textButtonPrefab;
 	public GameObject imageButtonPrefab;
 	public GameObject titleScreen;
+    public GameObject bottomButtons;
 	public Transform canvas;
-	public BranchSO branch;
+	public BranchSO startBranch;
 	//public Image[] layers;
 	public Image firstPanel;
+    Stack<BranchSO> history;
 	GameObject[] buttons;
+    BranchSO branch;
 	int[] points;
 	int pageNumber;
 	//int layerNumber;
@@ -21,12 +25,13 @@ public class Manager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        pageNumber = 0;
-		buttons = new GameObject[0];
+        history = new Stack<BranchSO>();
+        buttons = new GameObject[0];
 		points = new int[3];
 		points[0] = 0;
         points[1] = 0;
         points[2] = 0;
+        pageNumber = 0;
         //layerNumber = 0;
         instance = this;
     }
@@ -48,13 +53,14 @@ public class Manager : MonoBehaviour
 	public void StartGame()
 	{
 		titleScreen.SetActive(false);
-		ChooseBranch(branch);
+        bottomButtons.SetActive(true);
+		ChooseBranch(startBranch);
     }
 
-	public void SetPage()
+	public void DisplayPage()
 	{
         firstPanel.sprite = branch.GetPage(pageNumber);
-        Debug.Log(branch.GetLength() + " " + pageNumber + " " + branch.type);
+        //Debug.Log(branch.GetLength() + " " + pageNumber + " " + branch.type);
 
         if (branch.GetLength() <= pageNumber + 1 && (1 == branch.type))
         {
@@ -103,8 +109,7 @@ public class Manager : MonoBehaviour
     public void NextPage()
 	{
 		//Debug.Log("calling NextPage");
-        Debug.Log(branch.GetLength() + " " + pageNumber);
-
+        //Debug.Log(branch.GetLength() + " " + pageNumber);
         if (titleScreen.activeSelf)
 		{
 			return;
@@ -139,7 +144,7 @@ public class Manager : MonoBehaviour
         }
 
         pageNumber++;
-        SetPage();
+        DisplayPage();
     }
 
     public void ChooseBranch(BranchSO nextBranch)
@@ -149,11 +154,50 @@ public class Manager : MonoBehaviour
 			Destroy(buttons[a]);
 		}
 
+        if(null != branch)
+        {
+            history.Push(branch);
+        }
+
         branch = nextBranch;
         pageNumber = 0;
-        SetPage();
+        DisplayPage();
 		points[0] += branch.aPoints;
 		points[1] += branch.bPoints;
 		points[2] += branch.cPoints;
+    }
+
+    public void Back()
+    {
+        for (int a = 0; buttons.Length > a; a++)
+        {
+            Destroy(buttons[a]);
+        }
+
+        if (0 == pageNumber)
+        {
+            if(0 < history.Count)
+            {
+                points[0] -= branch.aPoints;
+                points[1] -= branch.bPoints;
+                points[2] -= branch.cPoints;
+                branch = history.Pop();
+                pageNumber = branch.GetLength() - 1;
+            }
+        }
+        else
+        {
+            pageNumber--;
+        }
+
+        DisplayPage();
+    }
+
+    public void Skip()
+    {
+        while((0 == buttons.Length) || (null == buttons[0]))
+        {
+            NextPage();
+        }
     }
 }
